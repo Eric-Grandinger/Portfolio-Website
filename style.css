@@ -1,0 +1,129 @@
+body {
+  background-color:#32302f;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+* {
+  color:#f9f5d7;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6; /* or 150%–170% */
+  letter-spacing: 0.02em;
+}
+.selected{
+  border-bottom: 3px solid #d79921 ;
+}
+nav , footer , div , ul , main , aside{
+
+  display: flex;
+}
+nav {
+  flex-direction:row;
+  justify-content: space-between;
+}footer {
+  flex-direction:row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+div.footer{
+  flex-direction:row;
+  justify-content: center;
+  border-bottom: 5px solid #d79921 ;
+}div.footer > * {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+b{
+  font-size:48px;
+  border-bottom: 5px solid #d79921 ;
+  margin-left:2.5rem;
+}
+img.fotter{
+  width:2rem;
+  height:2rem;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+span.footer{ 
+  display: flex;
+  align-items: center; 
+  justify-content: center
+}
+ul {
+  flex-direction:row;
+  list-style-type: none;
+}ul.nav {
+  flex-direction:row;
+}ul.aside {
+  flex-direction:column;
+  justify-content: space-between;
+  border-left: 5px solid #d79921 ;
+  height: 70%;
+}
+ul.aside > * > * > *{
+  width:2.5rem;
+  height:2.5rem;
+}
+
+div.text {
+  border-left: 5px solid #d79921 ;
+  width: 55rem;
+  padding-left:2.5rem;
+  flex-direction:column;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+a:before{
+  content: '';
+  background: #d79921;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
+}
+main {
+  padding-left:24vw;
+  flex-direction:row;
+  justify-content: space-between;
+}
+aside {
+
+  flex-direction: column;
+  justify-content: center;
+}
+ul.aside > li {
+  padding-left: 0rem;
+  padding-right: 2rem;
+}
+li {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+h1 {
+  padding-left:2rem;
+  font-size:3rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
